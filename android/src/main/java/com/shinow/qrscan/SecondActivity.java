@@ -50,6 +50,8 @@ public class SecondActivity extends AppCompatActivity {
         lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         sensorEventListener = new LightSensorEventListener(lightLayout);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         initView();
     }
 
